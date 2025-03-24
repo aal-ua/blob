@@ -1,12 +1,13 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import ExpandingArrow from '@/components/expanding-arrow'
-import Uploader from '@/components/uploader'
-import { Toaster } from '@/components/toaster'
+import Image from "next/image";
+import Link from "next/link";
+import ExpandingArrow from "@/components/expanding-arrow";
+import Uploader from "@/components/uploader";
+import { Toaster } from "@/components/toaster";
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center">
+      <h1>test</h1>
       <Toaster />
       <Link
         href="https://vercel.com/templates/next.js/blob-starter"
@@ -27,8 +28,8 @@ export default function Home() {
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
           Vercel Blob
-        </Link>{' '}
-        demo. Built with{' '}
+        </Link>{" "}
+        demo. Built with{" "}
         <Link
           href="https://nextjs.org/docs"
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
@@ -62,5 +63,5 @@ export default function Home() {
         </Link>
       </div>
     </main>
-  )
+  );
 }
