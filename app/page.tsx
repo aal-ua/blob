@@ -7,7 +7,6 @@ import { Toaster } from "@/components/toaster";
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center">
-      <h1>test</h1>
       <Toaster />
       <Link
         href="https://vercel.com/templates/next.js/blob-starter"
