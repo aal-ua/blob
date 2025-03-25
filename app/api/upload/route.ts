@@ -17,7 +17,10 @@ export async function POST(request: Request): Promise<NextResponse> {
           // Otherwise, you're allowing anonymous uploads.
           return {
             // allowedContentTypes: ['image/*'],
-            maximumSizeInBytes: 10 * 1024 * 1024, // 10MB
+            // maximumSizeInBytes: 10 * 1024 * 1024, // 10MB
+          // allowedContentTypes: ['application/pdf'], // Only PDFs allowed
+          maximumSizeInBytes: 1 * 1024 * 1024, // 12MB limit
+          multipart: true, // Enable multipart uploads
           }
         },
       onUploadCompleted: async ({ blob, tokenPayload }) => {
