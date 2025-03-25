@@ -18,9 +18,9 @@ export async function POST(request: Request): Promise<NextResponse> {
           return {
             // allowedContentTypes: ['image/*'],
             // maximumSizeInBytes: 10 * 1024 * 1024, // 10MB
-          // allowedContentTypes: ['application/pdf'], // Only PDFs allowed
-          maximumSizeInBytes: 1 * 1024 * 1024, // 12MB limit
-          multipart: true, // Enable multipart uploads
+          allowedContentTypes: ['application/pdf'], // Only PDFs allowed
+          // maximumSizeInBytes: 1 * 1024 * 1024, // 12MB limit
+          // multipart: true, // Enable multipart uploads
           }
         },
       onUploadCompleted: async ({ blob, tokenPayload }) => {
